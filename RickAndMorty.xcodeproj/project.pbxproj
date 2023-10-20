@@ -36,6 +36,9 @@
 		C898AB742AD03A57000D0CE4 /* MenuDTOMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C898AB732AD03A57000D0CE4 /* MenuDTOMapper.swift */; };
 		C898AB762AD03B63000D0CE4 /* PropertyIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C898AB752AD03B63000D0CE4 /* PropertyIterator.swift */; };
 		C898AB792AD044C5000D0CE4 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C898AB782AD044C5000D0CE4 /* Endpoint.swift */; };
+		C8E60B3D2AE2D7B5001C4DA6 /* ViewValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E60B3C2AE2D7B5001C4DA6 /* ViewValues.swift */; };
+		C8E60B3F2AE2ED0C001C4DA6 /* MessageDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E60B3E2AE2ED0C001C4DA6 /* MessageDisplayable.swift */; };
+		C8EF70BE2AD9D4BD004F881D /* SpinnerDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EF70BD2AD9D4BD004F881D /* SpinnerDisplayable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,9 @@
 		C898AB732AD03A57000D0CE4 /* MenuDTOMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDTOMapper.swift; sourceTree = "<group>"; };
 		C898AB752AD03B63000D0CE4 /* PropertyIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyIterator.swift; sourceTree = "<group>"; };
 		C898AB782AD044C5000D0CE4 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		C8E60B3C2AE2D7B5001C4DA6 /* ViewValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewValues.swift; sourceTree = "<group>"; };
+		C8E60B3E2AE2ED0C001C4DA6 /* MessageDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDisplayable.swift; sourceTree = "<group>"; };
+		C8EF70BD2AD9D4BD004F881D /* SpinnerDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerDisplayable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +184,7 @@
 		C82064D82AC5D37500EAC2F4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C8EF70BC2AD9D485004F881D /* Components */,
 				C82064EC2AC5D4F100EAC2F4 /* Localize */,
 				C82064EB2AC5D4D200EAC2F4 /* StateControllers */,
 				C82064EA2AC5D4B900EAC2F4 /* Utils */,
@@ -278,6 +285,7 @@
 		C82064E42AC5D44000EAC2F4 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				C8E60B3C2AE2D7B5001C4DA6 /* ViewValues.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -531,6 +539,15 @@
 			path = DTOs;
 			sourceTree = "<group>";
 		};
+		C8EF70BC2AD9D485004F881D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C8EF70BD2AD9D4BD004F881D /* SpinnerDisplayable.swift */,
+				C8E60B3E2AE2ED0C001C4DA6 /* MessageDisplayable.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -640,10 +657,12 @@
 				C820650A2AC71AE500EAC2F4 /* MenuRepository.swift in Sources */,
 				C898AB742AD03A57000D0CE4 /* MenuDTOMapper.swift in Sources */,
 				C82065102AC71C8300EAC2F4 /* MenuRepositoriesImp.swift in Sources */,
+				C8EF70BE2AD9D4BD004F881D /* SpinnerDisplayable.swift in Sources */,
 				C82065192AC71FEB00EAC2F4 /* StateController.swift in Sources */,
 				C82064F82AC5D92800EAC2F4 /* AppCoordinator.swift in Sources */,
 				C820650D2AC71BDD00EAC2F4 /* MenuItem.swift in Sources */,
 				C82064A62AC5BC5A00EAC2F4 /* AppDelegate.swift in Sources */,
+				C8E60B3D2AE2D7B5001C4DA6 /* ViewValues.swift in Sources */,
 				C82064FE2AC5ED1B00EAC2F4 /* HomeFactory.swift in Sources */,
 				C82065022AC5FDF600EAC2F4 /* UIViewExtensions.swift in Sources */,
 				C8484AD92ACC962A00C1D5C7 /* ApiError.swift in Sources */,
@@ -657,6 +676,7 @@
 				C82064A82AC5BC5A00EAC2F4 /* SceneDelegate.swift in Sources */,
 				C8484AD32ACC935600C1D5C7 /* ApiClientService.swift in Sources */,
 				C898AB722AD038EB000D0CE4 /* MenuDTO.swift in Sources */,
+				C8E60B3F2AE2ED0C001C4DA6 /* MessageDisplayable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

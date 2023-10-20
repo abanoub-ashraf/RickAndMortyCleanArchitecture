@@ -51,4 +51,23 @@ extension UIView {
             pLeft: widthPadding
         )
     }
+    
+    func centerX() {
+        guard let superView = self.superview else { return }
+        
+        translatesAutoresizingMaskIntoConstraints = false
+        centerXAnchor.constraint(equalTo: superView.centerXAnchor).isActive = true
+    }
+    
+    func centerY() {
+        guard let superView = self.superview else { return }
+        
+        translatesAutoresizingMaskIntoConstraints = false
+        centerYAnchor.constraint(equalTo: superView.centerYAnchor).isActive = true
+    }
+    
+    func centerXY() {
+        centerX()
+        centerY()
+    }
 }
